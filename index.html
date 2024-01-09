@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <form action="">
+      <div class="row">
+        <label for="net">Na ręke:</label>
+        <input type="number" name="net" id="netto" placeholder="3300">
+      </div>
+      <div class="row">
+        <label for="cost">Koszty:</label>
+        <input type="number" name="cost" id="costs" placeholder="50">
+      </div>
+      <div class="row mt">
+        <label for="costs">Powiększ o zwrot kosztów</label>
+        <input type="checkbox" name="costs" id="costs-check" disabled>
+      </div>
+      <div class="row">
+        <label for="health">Powiększ o składke zdrowotną</label>
+        <input type="checkbox" name="health" id="health-care-check" checked>
+      </div>
+      <div class="row">
+        <label for="podatek">Powiększ o podatek dochodowy</label>
+        <input type="checkbox" name="podatek" id="pit-check" disabled>
+      </div>
+
+      <button>Oblicz</button>
+    </form>
+
+    <div id="final-amount" class="mt">Kwota końcowa: </div>
+
+    <footer>Made by <a href="https://fojcikdominik.com/" target="_blank">Dominik Fojcik</a></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

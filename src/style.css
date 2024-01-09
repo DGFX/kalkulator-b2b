@@ -1,0 +1,31 @@
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+form {
+  width: 260px;
+}
+
+form > * {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+.mt {
+  margin-top: 2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0.5rem;
+}
